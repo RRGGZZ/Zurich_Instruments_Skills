@@ -4,6 +4,7 @@
 
 - Official toolkit checkout: `D:\HS_AFM\zhinst-toolkit`
 - Toolkit virtual environment: `D:\HS_AFM\.venv`
+- Recommended environment manager: `uv`
 - Skill: `D:\HS_AFM\zurich-mfli`
 - LabOne .NET API: `C:\Program Files\Zurich Instruments\LabOne\API\DotNET\ziDotNET-win64.dll`
 - Installed programming manual: `C:\Program Files\Zurich Instruments\LabOne\Documentation\pdf\LabOneProgrammingManual.pdf`
@@ -17,7 +18,7 @@ The installed .NET API reported version 21.08 while the instrument Data Server r
 
 ## Backend Selection
 
-Use `scripts/mfli_toolkit.py` with `D:\HS_AFM\.venv` for the preferred modern API. The environment installs the editable checkout plus `zhinst-core 26.4.1.6`, `zhinst-utils 0.7.2`, and the toolkit dependencies.
+Use `scripts/mfli_toolkit.py` with `D:\HS_AFM\.venv` for the preferred modern API. Create it with `uv venv D:\HS_AFM\.venv --python 3.12`, then install the editable checkout with `uv pip install --python D:\HS_AFM\.venv\Scripts\python.exe -e D:\HS_AFM\zhinst-toolkit`. The environment installs the checkout plus `zhinst-core`, `zhinst-utils`, and the toolkit dependencies.
 
 Use `scripts/mfli.ps1` for compatibility with the installed LabOne .NET API. It does not require Python packages.
 
