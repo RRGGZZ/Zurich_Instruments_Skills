@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zurich MFLI Control"
+  short_description: "Safely discover, inspect, and control MFLI instruments"
+  default_prompt: "Use $zurich-mfli to discover my MFLI and read its current status without changing settings."
